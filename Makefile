@@ -3,3 +3,6 @@ hello: main.o dohello.o
 
 main.o: main.c
 	gcc -c main.c $(CFLAGS)
+
+clean:
+	rm -f hello *.o
